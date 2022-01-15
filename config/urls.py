@@ -23,6 +23,7 @@ urlpatterns = [
 urlpatterns += [
     # API base url
     path("api/", include("config.api_router")),
+    path("api/book/", include("book.urls")),
     # DRF auth token
     path("auth-token/", obtain_auth_token),
 ]
